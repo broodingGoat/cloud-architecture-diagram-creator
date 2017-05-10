@@ -1,0 +1,29 @@
+{
+  "type" : "aws",
+  "nodes" : [
+    {
+      "id" : "server_1234",
+      "label" : "web server"
+    },
+    {
+      "id" : "cms_2345",
+      "label" : "drupal CMS server",
+    },
+    {
+      "id" : "no_sql_ds_1232",
+      "label" : "no sql data store"
+    }
+  ],
+  "edges" : [
+    {
+      "source" : "server_1234",
+      "target" : "cms_2345",
+      "connection" : "routes to",
+    },
+    {
+      "source" : "cms_2345",
+      "target" : "no_sql_ds_1232",
+      "connection" : "stores data in"
+    }
+  ]
+}
